@@ -7,7 +7,7 @@ class Empregado {
 	
 	Empregado() {
 		this.id = 10;
-		this.nome = "OCA E OCP Java Program 7"
+		this.nome = "OCA E OCP Java Program 7";
 	}
 	
 	//Como toda classe Java extend de Object, aqui o método toString()
