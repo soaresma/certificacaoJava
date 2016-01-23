@@ -12,6 +12,12 @@ public class Employed extends Person {
 		System.out.println("Client call the public constructor");
 	}
 	
+	//This uncomment this code and look what happen!!!!
+	/* public Employed() {
+		this(JOB_NUMBER, SALARY);
+		System.out.println("Client call the public constructor");
+	} */
+	
 	//Here, another client can access the protected constructor why
 	//belong the same package. 
 	//Remember, protected = package + child
@@ -28,5 +34,10 @@ public class Employed extends Person {
 		System.out.println("Client call the private constructor");
 	} */
 	
+	//This uncomment this code and look what happen!!!!
+	/* private Employed(String jobNumber, double salary) {
+		this.jobNumber = jobNumber;
+		this.salary = salary;
+	} */
 	
 }
