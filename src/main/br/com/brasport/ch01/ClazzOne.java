@@ -7,15 +7,17 @@ package br.com.brasport.ch01;
 *	uma referência da classe interna private usando o método da classe externa que retorne tal
 *	referência.
 *
-*	4) Classe interna anônima envolvendo herança -> primeira versão. 	
+*	4) Classe aninhada estática. 	
 *
 **/
-class GerenteII extends EmpregadoII {
+class ClazzOne {
 	
-	EmpregadoII e = new EmpregadoII() {
-		void identificar() {
-			System.out.println("identificar de anonymouns class atribuida a referencia e de EmpregadoII");
+	private static int x = 10;
+	
+	static class InnerClassClazzOne {
+		void exibir(){
+			System.out.println("Valor da referência x da outerClass ClazzOne: " + x);
 		}
-	};
+	}
 		
 }

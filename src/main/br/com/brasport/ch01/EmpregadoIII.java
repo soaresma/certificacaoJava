@@ -7,15 +7,16 @@ package br.com.brasport.ch01;
 *	uma referência da classe interna private usando o método da classe externa que retorne tal
 *	referência.
 *
-*	4) Classe interna anônima envolvendo herança -> primeira versão. 	
+*	5) Classe aninhada estática. 	
 *
 **/
-class GerenteII extends EmpregadoII {
+class EmpregadoIII {
 	
-	EmpregadoII e = new EmpregadoII() {
-		void identificar() {
-			System.out.println("identificar de anonymouns class atribuida a referencia e de EmpregadoII");
-		}
-	};
-		
+	int id;
+	String nome;
+	
+	EmpregadoIII() {
+		this.id = 10;
+		this.nome = "Marcelo"
+	}	
 }

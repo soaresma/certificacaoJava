@@ -27,10 +27,7 @@ class ClazzAnonymousClass {
 			}
 		}
 		
-		//referência a classe anônima de método
-		AnonymousClassMethod anonymous = new AnonymousClassMethod();
-		//a classe anonima de método está no escopo de metodo testar()
-		//invocando na referencia da anonymouns class do metodo.
+		AnonymousClassMethod anonymous = new AnonymousClassMethod();	
 		anonymous.exibir();
 	}
 	
