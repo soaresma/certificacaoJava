@@ -23,10 +23,10 @@ public class Employed extends Person {
 	}
 	
 	//This private constructor just can invoked by members of within itself class.
-	private Employed(double salary) {
+	/* private Employed(double salary) {
 		this(JOB_NUMBER, SALARY);
 		System.out.println("Client call the private constructor");
-	}
+	} */
 	
 	
 }
